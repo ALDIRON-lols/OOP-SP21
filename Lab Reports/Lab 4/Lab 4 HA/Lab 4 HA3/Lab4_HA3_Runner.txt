@@ -1,0 +1,29 @@
+
+package com.mycompany.lab4_ha3;
+
+public class Lab4_HA3_Runner {
+    public static void main(String[] args) {
+        int[] array1 = {43, 12, 64, 86, 12};
+        int[] array2 = {23, 54, 75, 34, 76};
+        
+        Student s1 = new Student();
+        Student s2 = new Student("Ali", array2);
+        
+        s1.set_name("Imran");
+        s1.set_array(array1);
+        
+        System.out.println("Student name:\t" + s1.get_name() + "\t\tAverage:" + "\t" + s1.average() + "\n");
+        System.out.println("Student name:\t" + s2.get_name() + "\t\tAverage:" + "\t" + s2.average() + "\n");
+        
+        if(s1.average()>s2.average()){
+            System.out.println(s1.get_name() + " has higher average of " + s1.average() + "\n");
+        }
+        else{
+            System.out.println(s2.get_name() + " has higher average of " + s2.average() + "\n");
+        }
+        
+        Student s3 = new Student(s1.get_name(), s2.get_result_array());
+        
+        System.out.println("Student name:\t" + s3.get_name() + "\t\tAverage:" + "\t" + s3.average());
+    }
+}

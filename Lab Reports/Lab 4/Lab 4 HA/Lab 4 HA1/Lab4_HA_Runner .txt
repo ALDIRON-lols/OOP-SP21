@@ -1,0 +1,17 @@
+
+package com.mycompany.lab4_ha;
+
+public class Lab4_HA_Runner {
+    public static void main(String[] args) {
+        Marks m1 = new Marks();
+        Marks m2 = new Marks(65, 65, 23);
+        
+        m1.setmarks1(76);
+        m1.setmarks2(56);
+        m1.setmarks3(87);
+        
+        System.out.println("Student:" + "\t\t Arif" + "\nSubject 1:" + "\t\t" + m1.getmarks1() + "\nSubject 2:" + "\t\t" + m1.getmarks2() + "\nSubject 3:" + "\t\t" + m1.getmarks3());
+        System.out.println("Student:" + "\t\t Irfan" + "\nSubject 1:" + "\t\t" + m2.getmarks1() + "\nSubject 2:" + "\t\t" + m2.getmarks2() + "\nSubject 3:" + "\t\t" + m2.getmarks3());
+    }
+    
+}

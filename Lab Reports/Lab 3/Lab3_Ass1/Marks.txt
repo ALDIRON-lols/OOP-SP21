@@ -1,0 +1,24 @@
+
+package lab3_ass1;
+
+public class Marks {
+    private int sub_1_marks;
+    private int sub_2_marks;
+    private int sub_3_marks;
+    
+    Marks(){
+        sub_1_marks = 40;
+        sub_2_marks = 40;
+        sub_3_marks = 40;
+    }
+    
+    Marks(int a, int b, int c){
+        sub_1_marks = a;
+        sub_2_marks = b;
+        sub_3_marks = c;
+    }
+    
+    public int sum(){
+        return (sub_1_marks + sub_2_marks + sub_3_marks);
+    }
+}

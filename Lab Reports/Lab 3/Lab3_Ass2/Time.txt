@@ -1,0 +1,24 @@
+package com.mycompany.lab3_ass2;
+
+public class Time {
+    private int hr;
+    private int min;
+    private int sec;
+    
+    Time(){
+        hr = 00;
+        min = 00;
+        sec = 00;
+    }
+    
+    Time(int nhr, int nmin, int nsec){
+        hr = nhr;
+        min = nmin;
+        sec = nsec;
+    }
+    
+    public void print(){
+        System.out.println("The time is \n" + hr + ":" + min + ":" + sec + ".");
+    }
+    
+}

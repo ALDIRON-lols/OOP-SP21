@@ -1,0 +1,12 @@
+package com.mycompany.lab3_ass2;
+
+public class Lab3_Ass2_Runner {
+    public static void main(String[] args) {
+        Time t1 = new Time();
+        Time t2 = new Time(05, 15, 01);
+        
+        t1.print();
+        t2.print();
+    }
+    
+}

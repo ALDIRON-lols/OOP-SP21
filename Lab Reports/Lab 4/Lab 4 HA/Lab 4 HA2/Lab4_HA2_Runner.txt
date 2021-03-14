@@ -1,0 +1,17 @@
+
+package com.mycompany.lab4_ha2;
+
+public class Lab4_HA2_Runner {
+    public static void main(String[] args) {
+        Account a1 = new Account(5400);
+        
+        a1.withdraw(1200);
+        a1.deposit(500);
+        
+        Account a2 = new Account(a1.get_balance());
+        
+        a2.deposit(15200);
+        System.out.println("Account 1:\t\t" + a1.get_balance() + "\nAccount 2:\t\t" + a2.get_balance());
+    }
+    
+}

@@ -1,0 +1,24 @@
+package com.mycompany.lab2_ass2;
+import java.util.*;
+
+
+public class Lab2_Ass2_Runner {
+    public static void main(String[] args) {
+        
+        Rectangle r1 = new Rectangle();
+        Rectangle r2 = new Rectangle();
+        
+        Scanner input = new Scanner(System.in);
+        r1.length = input.nextInt();
+        r1.width = input.nextInt();
+        System.out.println("Rectangle 1 " + "\nLength : " + r1.length + "\nWidth : " + r1.width);
+        
+        r2.length = 12;
+        r2.width = 19;
+        System.out.println("Rectangle 2 " + "\nLength : " + r1.length + "\nWidth : " + r1.width);
+        
+        //Area for both rectangles
+        r1.get_area();
+        r2.get_area();
+    }
+}

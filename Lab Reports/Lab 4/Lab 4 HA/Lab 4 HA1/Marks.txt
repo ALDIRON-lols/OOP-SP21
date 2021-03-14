@@ -1,0 +1,58 @@
+
+package com.mycompany.lab4_ha;
+
+public class Marks {
+    private int marks_of_subject1;
+    private int marks_of_subject2;
+    private int marks_of_subject3;
+    
+    Marks(){
+        marks_of_subject1 = 0;
+        marks_of_subject2 = 0;
+        marks_of_subject3 = 0;
+    }
+    
+    Marks(int marks_of_subject1, int marks_of_subject2, int marks_of_subject3){
+        this.marks_of_subject1 = marks_of_subject1;
+        this.marks_of_subject2 = marks_of_subject2;
+        this.marks_of_subject3 = marks_of_subject3;
+    }
+    
+    
+    
+//GET METHODS    
+    int getmarks1(){
+        return marks_of_subject1;
+    }
+    
+    int getmarks2(){
+        return marks_of_subject2;
+    }
+    
+    int getmarks3(){
+        return marks_of_subject3;
+    }
+    
+    void setmarks1(int marks){
+        marks_of_subject1 = marks;
+    }
+   
+    
+    
+//SET METHODS    
+    void setmarks2(int marks){
+        marks_of_subject2 = marks;
+    }
+    
+    void setmarks3(int marks){
+        marks_of_subject3 = marks;
+    }
+    
+    
+    
+//PRINT    
+    void print(String name){
+        System.out.println("Student:" + "\t\t" + name + "\nSubject 1:" + "\t\t" + marks_of_subject1 + "\nSubject 2:" + "\t\t" + marks_of_subject2 + "\nSubject 3:" + "\t\t" + marks_of_subject3);
+    }
+}
+    

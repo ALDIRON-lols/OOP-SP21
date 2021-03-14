@@ -1,0 +1,37 @@
+
+package com.mycompany.lab4_ha2;
+
+public class Account {
+    private double balance;
+    
+    Account(){
+        balance = 00;
+    }
+    
+    Account(double amount){
+        balance = amount;
+    }
+   
+    
+    
+    
+    void set_balance(double amount){
+        balance = amount;
+    }
+    
+    double get_balance(){
+        return balance;
+    }
+    
+    
+    
+    
+    
+    void withdraw(double amount){
+        balance  = balance - amount;
+    }
+    
+    void deposit(double amount){
+        balance = balance + amount;
+    }
+}

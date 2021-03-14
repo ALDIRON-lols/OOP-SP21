@@ -1,0 +1,39 @@
+package com.mycompany.lab2_ass1;
+import java.util.*;
+
+
+public class Lab2_Ass1_Runner {
+    
+    public static void main(String[] args) {
+        Car car1  = new Car();
+        Car car2  = new Car();
+        
+        //first car
+        car1.company = "DAIHATSU";
+        car1.horse_power = 1100;
+        car1.name = "Coure";
+        car1.model = 2006;
+        
+        //second car
+        car2.company = "HONDA";
+        car2.horse_power = 2300;
+        car2.name = "Civic";
+        car2.model = 2017;
+        
+        //details of first car
+        System.out.println("CAR 1");
+        System.out.println("\nName " + car1.name + "Company: " + car1.company + "\nHorse power " + car1.horse_power +  "\nModel " + car1.model + "\n");
+        
+        //details of 2nd car
+        System.out.println("CAR 2");
+        System.out.println("\nName " + car2.name + "Company: " + car2.company + "\nHorse power " + car2.horse_power +  "\nModel " + car2.model + "\n");
+        
+        //price of both cares respectivley
+        System.out.println("The price of DAIHATSU Coure is " + car1.price());
+        System.out.println("The price of HONDA Civic  is " + car2.price() + "\n");
+        
+        //condition of both cars respectively
+        car1.condition();
+        car2.condition();
+    }
+}

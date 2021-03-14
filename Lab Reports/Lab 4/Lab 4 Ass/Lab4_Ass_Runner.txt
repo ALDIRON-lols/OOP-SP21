@@ -1,0 +1,18 @@
+
+package com.mycompany.lab4_ass;
+
+public class Lab4_Ass_Runner {
+    public static void main(String[] args) {
+        HotDogStand s1 = new HotDogStand(1000101, 55, 15, 25, 15);
+        HotDogStand s2 = new HotDogStand(1000119, 91, 14, 54, 23);
+        HotDogStand s3 = new HotDogStand(1000176, 43, 23, 12, 8);
+        
+        s1.justSold(1);
+        s2.justSold(3);
+        s3.justSold(2);
+        
+        System.out.println("HOT DOGS STAND ID:\t" + s1.get_hot_dog_stands_id_number() + "\nhot n spicy:\t" + s1.get_hot_an_spicy() + "\nsweet n tender:\t" + s1.get_sweet_an_tender() + "\ncheese lovers:\t" + s1.get_cheese_lovers() + "\nTotal sold:\t" + s1.get_hot_dogs_sold() + "\n\n");
+        System.out.println("HOT DOGS STAND ID:\t" + s2.get_hot_dog_stands_id_number() + "\nhot n spicy:\t" + s2.get_hot_an_spicy() + "\nsweet n tender:\t" + s2.get_sweet_an_tender() + "\ncheese lovers:\t" + s2.get_cheese_lovers() + "\nTotal sold:\t" + s2.get_hot_dogs_sold() + "\n\n");
+        System.out.println("HOT DOGS STAND ID:\t" + s3.get_hot_dog_stands_id_number() + "\nhot n spicy:\t" + s3.get_hot_an_spicy() + "\nsweet n tender:\t" + s3.get_sweet_an_tender() + "\ncheese lovers:\t" + s3.get_cheese_lovers() + "\nTotal sold:\t" + s3.get_hot_dogs_sold() + "\n\n");
+    }
+}

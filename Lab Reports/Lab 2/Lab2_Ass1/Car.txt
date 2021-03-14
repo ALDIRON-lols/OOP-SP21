@@ -1,0 +1,30 @@
+package com.mycompany.lab2_ass1;
+
+public class Car {
+    String company;
+    int model;
+    int horse_power;
+    String name;
+    
+    
+    Car(){   
+    }
+    
+    public int price(){
+        if (horse_power > 1200){
+            return 3000000;
+        }
+        else{
+            return 500000;
+        }
+    }
+    
+    public void condition(){
+        if (horse_power > 1200){
+            System.out.println("HONDA Civic is brand new");
+        }
+        else{
+            System.out.println("DAIHATSU Coure is in used state");
+        }
+    }
+}

@@ -1,0 +1,91 @@
+
+package com.mycompany.lab4_ass;
+
+public class HotDogStand{
+     private int hot_dog_stands_id_number;
+     private int hot_dogs_sold;
+     private int hot_an_spicy;
+     private int sweet_an_tender;
+     private int cheese_lovers;
+     
+     HotDogStand(){
+         hot_dog_stands_id_number = 100000;
+         hot_dogs_sold = 10;
+         hot_an_spicy = 10;
+         sweet_an_tender = 10;
+         cheese_lovers = 10;
+     }
+     
+     
+     
+     HotDogStand(int id, int sold, int hot_an_spicy, int sweet_an_tender, int cheese_lovers){
+         hot_dog_stands_id_number = id;
+         hot_dogs_sold = sold;
+         this.hot_an_spicy = hot_an_spicy;
+         this.sweet_an_tender = sweet_an_tender;
+         this.cheese_lovers = cheese_lovers;
+     }
+     
+     
+     
+     void justSold(int n){
+         hot_dogs_sold++;
+         if (n==1){
+             hot_an_spicy++;
+         }
+         else if(n==2){
+             sweet_an_tender++;
+         }
+         else{
+             cheese_lovers++;
+         }
+     }
+     
+     
+     
+     
+     //GET  METHODS
+     int get_hot_an_spicy(){
+         return hot_an_spicy;
+     }
+     
+     int get_sweet_an_tender(){
+         return sweet_an_tender;
+     }
+     
+     int get_cheese_lovers(){
+         return cheese_lovers;
+     }
+     
+     int get_hot_dogs_sold(){
+         return hot_dogs_sold;
+     }
+     
+     int get_hot_dog_stands_id_number(){
+         return hot_dog_stands_id_number;
+     }
+     
+   
+     
+     
+//SET METHODS     
+     void set_hot_an_spicy(int hot_an_spicy){
+         this.hot_an_spicy = hot_an_spicy;
+     }
+     
+     void set_sweet_an_tender(int sweet_an_tender){
+         this.sweet_an_tender = sweet_an_tender;
+     }
+     
+     void set_cheese_lovers(int cheese_lovers){
+         this.cheese_lovers = cheese_lovers;
+     }
+     
+     void set_hot_dogs_sold(int hot_dogs_sold){
+         this.hot_dogs_sold = hot_dogs_sold;
+     }
+     
+     void set_hot_dog_stands_id_number(int hot_dog_stands_id_number){
+         this.hot_dog_stands_id_number = hot_dog_stands_id_number;
+     }
+}

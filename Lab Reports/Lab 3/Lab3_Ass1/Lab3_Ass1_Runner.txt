@@ -1,0 +1,14 @@
+
+package lab3_ass1;
+
+public class Lab3_Ass1_Runner {
+
+    public static void main(String[] args) {
+        Marks stu1 = new Marks();
+        Marks stu2 = new Marks(92, 63, 88);
+        
+        System.out.println("Student 1 marks are " + stu1.sum());
+        System.out.println("Student 2 marks are " + stu2.sum());
+    }
+    
+}
