@@ -1,0 +1,39 @@
+
+package com.mycompany.lab5_ass;
+
+public class Fraction {
+    private int integer1;
+    private int integer2;
+    private double ratio;
+    
+    Fraction(){
+        integer1 = 1;
+        integer2 = 1;
+        ratio = integer1/integer2;
+    }
+    
+    Fraction(int int1, int int2){
+        integer1 = int1;
+        integer2 = int2;
+        ratio = integer1/integer2;
+    }
+    
+    public void setRatio(double ratio){
+        this.ratio = ratio;
+    }
+    
+    public double getRatio(){
+        return ratio;
+    }
+    
+    public static boolean equals(Fraction a, Fraction b){
+        if(b.ratio == a.ratio)
+            return true;
+        else
+            return false;
+    }
+    
+    public void display(){
+        System.out.println("Integer 1:\t\t" + integer1 + "\nInteger 2:\t\t" + integer2 + "\nRatio of the two integers:\t" + ratio);
+    }
+}

@@ -1,0 +1,14 @@
+
+package com.mycompany.lab5_ha1;
+
+public class Runner {
+    public static void main(String[] args) {
+        Distance d1 = new Distance(11, 22);
+        Distance d2 = new Distance(22, 11);
+        Distance d3 = d1.adder(d2);
+        
+        d1.display();
+        d2.display();
+        d3.display();
+    }
+}

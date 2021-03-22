@@ -1,0 +1,65 @@
+
+package com.mycompany.lab5_ha2;
+
+public class Book {
+    private String author;
+    private String[] chapterNames = new String[100];
+    
+    Book(){
+        author = "unknown";
+        String[] newS = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "u", "v", "w", "x", "y", "z"};
+        chapterNames = newS;
+    }
+    
+    Book(String name, String[] chapterNames){
+        author =  name;
+        this.chapterNames = chapterNames;
+    }
+    
+    public static boolean compareAuthors(Book a, Book b){
+        if(a.author.equals(b.author))
+            return true;
+        else
+            return false;
+    }
+    
+    public static Book compareChapterNames(Book a, Book b){
+        int ca = 0;int cb = 0;
+        /*while(a.chapterNames[ca] != null){
+            ca++;
+        }
+        while(b.chapterNames[cb] != null){
+            cb++;
+        }*/
+        for(int i =0; i<a.chapterNames.length; i++){
+            ca++;
+        }
+        for(int i =0; i<b.chapterNames.length; i++){
+            cb++;
+        }
+        if(ca>cb){
+            System.out.println("The 1st Book had more chapters.\n\n");
+            return a;
+        }
+        else{
+            System.out.println("The 2nd Book had more chapters.\n\n");
+            return b;
+        }
+    }
+    
+    public void setAuthor(String name){
+        author = name;
+    }
+    
+    public String getAuthor(){
+        return author;
+    }
+    
+    public void setChapterNames(String[] chapters){
+        chapterNames = chapters;
+    }
+    
+    public String[] getChapterNames(){
+        return chapterNames;
+    }
+}

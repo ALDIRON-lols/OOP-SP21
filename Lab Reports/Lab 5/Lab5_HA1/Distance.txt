@@ -1,0 +1,33 @@
+
+package com.mycompany.lab5_ha1;
+
+public class Distance {
+    private int feet, inches;
+    
+    Distance(){
+        feet = 1;
+        inches = 1;
+    }
+    
+    Distance(int feet, int inches){
+        this.feet = feet;
+        this.inches = inches;
+    }
+    
+    public int getFeet(){
+        return feet;
+    }
+    
+    public int getInches(){
+        return inches;
+    }
+    
+    public Distance adder(Distance objB){
+        Distance new_obj = new Distance(feet+objB.feet, inches+objB.inches);
+        return new_obj;
+    }
+    
+    public void display(){
+        System.out.println("Feet:\t\t" + feet + "\nInches:\t\t" + inches + "\n\n");
+    }
+}

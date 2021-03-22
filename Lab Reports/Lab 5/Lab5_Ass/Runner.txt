@@ -1,0 +1,17 @@
+
+package com.mycompany.lab5_ass;
+
+public class Runner {
+    public static void main(String[] args) {
+        Fraction f1 = new Fraction(32, 12);
+        Fraction f2 = new Fraction();
+        
+        f1.display();
+        f2.display();
+        
+        if (Fraction.equals(f1, f2))
+            System.out.println("Both ratios are of equal values.");
+        else
+            System.out.println("There is a difference in the values of the ratios."); 
+    }
+}

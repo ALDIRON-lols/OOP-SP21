@@ -1,0 +1,30 @@
+
+package com.mycompany.lab5_ha2;
+
+public class Runner {
+    public static void main(String[] args) {
+        Book b1 = new Book();
+        
+        String[] chNa_b2 = {"Origin", "Death of the elder ones", "A new Age", "Break your limits", "Reality", "Change of prespective", "Alliance", "Changing minds", "Preperation", "A new hope", "The last stand", "Born from the ashes", "Until we die"};
+        Book b2 = new Book("Aimer", chNa_b2);
+        
+        b1.setAuthor("Jiraya");
+        
+        if(Book.compareAuthors(b1, b2))
+            System.out.println("Both book have same authors.\n\n");
+        else
+            System.out.println("Both book have unique authors.\n\n");
+        
+        Book b3 = Book.compareChapterNames(b1, b2);
+        
+        System.out.println("\n\n\"Book 1\":\n\nAuthor:\t\t" + b1.getAuthor() + "\nChapters:");
+        for(int i = 0; i<b1.getChapterNames().length; i++){
+            System.out.println("\t" + b1.getChapterNames()[i]);
+        }
+        
+        System.out.println("\n\n\"Book 2\":\n\nAuthor:\t\t" + b2.getAuthor() + "\nChapters:");
+        for(int i = 0; i<b2.getChapterNames().length; i++){
+            System.out.println("\t" + b2.getChapterNames()[i]);
+        }
+    }
+}
