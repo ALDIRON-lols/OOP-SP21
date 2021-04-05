@@ -1,0 +1,11 @@
+public class Runner {
+    
+    public static void main(String[] args) {
+        
+        System.out.println("Sin(90):\t" + Calculator.sin(90) + "\naddition of that sin into Cos(60):\t" + Calculator.sum(Calculator.sin(90), Calculator.cos(60)));
+        System.out.println("Now multiplication of that sum with a negative number, lets say by -1550.0832:\t" + Calculator.multiply(Calculator.sum(Calculator.sin(90), Calculator.cos(60)), -1550.0832));
+        System.out.println("Now tan of the result:\t" + Calculator.tan(Calculator.multiply(Calculator.sum(Calculator.sin(90), Calculator.cos(60)), -1550.0832)));
+        System.out.println("Mod between the result and 90:\t" + Calculator.modulus(Calculator.tan(Calculator.multiply(Calculator.sum(Calculator.sin(90), Calculator.cos(60)), -1550.0832)), 90));
+        System.out.println("Now division of the result by 2:\t" + Calculator.divide(Calculator.modulus(Calculator.tan(Calculator.multiply(Calculator.sum(Calculator.sin(90), Calculator.cos(60)), -1550.0832)), 90), 2));
+    }
+}

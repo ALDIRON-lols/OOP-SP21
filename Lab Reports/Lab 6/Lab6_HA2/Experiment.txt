@@ -1,0 +1,12 @@
+
+public class Experiment {
+    public static int count = 0;
+    
+    Experiment(){
+        count++;
+    }
+    
+    public void destroy(){
+        count--;
+    }
+}

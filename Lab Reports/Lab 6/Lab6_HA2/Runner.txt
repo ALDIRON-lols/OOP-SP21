@@ -1,0 +1,15 @@
+public class Runner {
+    
+    public static void main(String[] args) {
+        
+        Experiment e1 = new Experiment();
+        Experiment e2 = new Experiment();
+        Experiment e3 = new Experiment();
+        Experiment e4 = new Experiment();
+        
+        e4.destroy();
+        
+        System.out.println("The number of objects created at the end of the program are : \t" + Experiment.count + "\n\n");
+    }
+    
+}
