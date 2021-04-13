@@ -1,0 +1,22 @@
+public class Runner {
+
+    public static void main(String[] args) {
+        
+        Book b1 = new Book();
+        
+        Person p1 = new Person("Aether");
+        
+        b1.getAuthor().setPersonCity("Teyvat");
+        b1.getAuthor().setPersonCode(014324);
+        b1.getAuthor().setPersonHouse(656);
+        b1.getAuthor().setPersonStreet(14);
+        
+        b1.setBookName("Genshin Impact");
+        b1.setPublisher("Mihoyo");
+        
+        b1.getAuthor().setName("Aether");
+        
+        b1.display();
+    }
+    
+}

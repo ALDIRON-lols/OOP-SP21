@@ -1,0 +1,65 @@
+public class Book {
+    private Person author;
+    private String bookName;
+    private String publisher;
+
+    public Book(){
+        author = new Person();
+    }
+    
+    public Book(Person nauthor, String bookName, String publisher) {
+        author = new Person();
+        this.author = nauthor;
+        this.bookName = bookName;
+        this.publisher = publisher;
+    }
+
+    
+    
+    
+    
+    
+    
+    public void setAuthor(Person author) {
+        this.author = author;
+    }
+
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
+    }
+
+    
+    
+    
+    
+    
+    public Person getAuthor() {
+        return author;
+    }
+
+    public String getBookName() {
+        return bookName;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
+    
+    
+    
+    public void set_author_address(Address naddress){
+        author.setPersonCity(naddress.getCity());
+        author.setPersonHouse(naddress.getHouse());
+        author.setPersonStreet(naddress.getStreet());
+        author.setPersonCode(naddress.getCode());
+    }
+    
+    
+    public void display(){
+        System.out.println("\nBook name:\t" + bookName + "\nPublisher name:\t" + publisher + "\nAuthor detals:\t" + author.toString());
+    }
+}
