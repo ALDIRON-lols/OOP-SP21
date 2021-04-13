@@ -1,0 +1,20 @@
+public class Runner {
+
+    public static void main(String[] args) {
+        
+        Point p1_start = new Point(12, 6);
+        Point p1_end = new Point(3, 8);
+        
+        Line l1 = new Line(p1_start, p1_end);
+        
+        Line l2 = new Line(12,32,12,12);
+        
+        Line l3 = new Line();
+        
+        l3.setEndPoint(p1_start);
+        l3.setStartPointCoordinate(5, 9);
+        
+        System.out.println(p1_start + "\n\n\n\n" + l1 + "\n\n\n\n" +l2 + "\n\n\n\n" + l3);
+    }
+    
+}

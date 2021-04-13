@@ -1,0 +1,57 @@
+public class Point {
+    
+    private int x_coordinate;
+    private int y_coordinate;
+
+    
+    
+    
+    
+    public Point() {
+        x_coordinate = 1;
+        y_coordinate = 1;
+    }
+    
+    public Point(int x_coordinate, int y_coordinate) {
+        this.x_coordinate = x_coordinate;
+        this.y_coordinate = y_coordinate;
+    }
+    
+    
+    
+    
+    
+    
+    
+    //Setters
+    public void setX_coordinate(int x_coordinate) {
+        this.x_coordinate = x_coordinate;
+    }
+
+    public void setY_coordinate(int y_coordinate) {
+        this.y_coordinate = y_coordinate;
+    }
+
+    
+    
+    
+    
+    
+    
+    //Getters
+    public int getX_coordinate() {
+        return x_coordinate;
+    }
+
+    public int getY_coordinate() {
+        return y_coordinate;
+    }
+    
+    public String toString(){
+        return "x-coordinate:\t" + x_coordinate + "\ny-coordinate:\t" + y_coordinate + "\n\n\n\n";
+    }
+    
+    public void display(){
+        System.out.println("x-coordinate:\t" + x_coordinate + "\ny-coordinate:\t" + y_coordinate);
+    }
+}

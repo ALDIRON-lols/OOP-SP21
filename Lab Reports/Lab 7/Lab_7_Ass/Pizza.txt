@@ -1,0 +1,102 @@
+public class Pizza {
+    private String size;
+    private int no_of_cheese_toppings;
+    private int no_of_perpporoni_toppings;
+    private int no_of_ham_toppings;  
+    
+    
+    
+    
+    
+
+    //Constructors
+    public Pizza(){
+        size = "small";
+        no_of_cheese_toppings = -1;
+        no_of_perpporoni_toppings = -1;
+        no_of_ham_toppings = -1;
+    }
+    
+    public Pizza(String size, int no_of_cheese_toppings, int no_of_perpporoni_toppings, int no_of_ham_toppings) {
+        this.size = size;
+        this.no_of_cheese_toppings = no_of_cheese_toppings;
+        this.no_of_perpporoni_toppings = no_of_perpporoni_toppings;
+        this.no_of_ham_toppings = no_of_ham_toppings;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    //Setters
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public void setNo_of_cheese_toppings(int no_of_cheese_toppings) {
+        this.no_of_cheese_toppings = no_of_cheese_toppings;
+    }
+
+    public void setNo_of_perpporoni_toppings(int no_of_perpporoni_toppings) {
+        this.no_of_perpporoni_toppings = no_of_perpporoni_toppings;
+    }
+
+    public void setNo_of_ham_toppings(int no_of_ham_toppings) {
+        this.no_of_ham_toppings = no_of_ham_toppings;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //Getters
+    public String getSize() {
+        return size;
+    }
+
+    public int getNo_of_cheese_toppings() {
+        return no_of_cheese_toppings;
+    }
+
+    public int getNo_of_perpporoni_toppings() {
+        return no_of_perpporoni_toppings;
+    }
+
+    public int getNo_of_ham_toppings() {
+        return no_of_ham_toppings;
+    }
+    
+    
+    
+    
+    
+    
+    public double calcCost(){
+        int toppings_total = 2*(no_of_cheese_toppings + no_of_perpporoni_toppings + no_of_ham_toppings);
+        double total = 0;
+        switch(size){
+            case "small":
+                return total = 10+toppings_total;
+            case "medium":
+                return total = 12+toppings_total;
+            case "large":
+                return total = 14+toppings_total;
+        }
+        return total;
+    }
+    
+    
+    public String getDescription(){
+        return "\nSize:\t\t\t" + size + "\nCheese Toppings:\t" + no_of_cheese_toppings + "\nPepporoni Toppings:\t" + no_of_perpporoni_toppings + "\nHam Toppings:\t\t" + no_of_ham_toppings + "\nCost of this pizza:\t" + this.calcCost() + "\n";
+    }
+    
+}

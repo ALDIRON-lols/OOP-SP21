@@ -1,0 +1,91 @@
+public class Person {
+    private String name;
+    private Address address;
+    
+    Person(){
+        address = new Address();
+    }
+    
+    Person(Address addres){
+        address = new Address();
+        this.address = addres;
+    }
+    
+    Person(String name){
+        address = new Address();
+        this.name = name;
+    }
+    
+    Person(String name, int street, int house, String city, int code){
+        address = new Address();
+        this.name = name;
+        address.setStreet(street);
+        address.setHouse(house);
+        address.setCity(city);
+        address.setCode(code);
+    }
+    
+    public void setAddress(Address address){
+        this.address = address;
+    }
+    
+    public Address getAddress(){
+        return address;
+    }
+    
+    
+    
+    
+    //Set methods
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setPersonStreet(int street) {
+        address.setStreet(street);
+    }
+    
+    public void setPersonHouse(int house){
+        address.setHouse(house);
+    }
+    
+    public void setPersonCity(String city){
+        address.setCity(city);
+    }
+    
+    public void setPersonCode(int code){
+        address.setCode(code);
+    }
+    
+    
+    
+    
+    
+    //Get Methods
+    public String getName(){
+        return name;
+    }
+
+    public int getPersonStreet() {
+        return address.getStreet();
+    }
+    
+    public int getPersonHouse(){
+        return address.getHouse();
+    }
+    
+    public int getPersonCode(){
+        return address.getCode();
+    }
+    
+    public String getPersonCity(){
+        return address.getCity();
+    }
+    
+    
+    
+    
+    public void display(){
+        System.out.println("Person's Name:" + name + "\n\n" + address + "\n\n\n\n");    //A toString method is created in the address class
+    }
+}

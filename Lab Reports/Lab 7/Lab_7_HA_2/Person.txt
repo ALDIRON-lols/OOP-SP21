@@ -1,0 +1,113 @@
+public class Person {
+    private String name;
+    private Address address;
+    private String bookName;
+    private String publisher;
+    
+    public Person(){
+        address = new Address();
+    }
+    
+    public Person(Address addres){
+        address = new Address();
+        this.address = addres;
+    }
+    
+    public Person(String name, String bookName, String publisher){
+        address = new Address();
+        this.name = name;
+        this.bookName = bookName;
+        this.publisher = publisher;
+    }
+    
+    public Person(String name, String bookName, String publisher, int street, int house, String city, int code){
+        address = new Address();
+        this.name = name;
+        this.bookName = bookName;
+        this.publisher = publisher;
+        address.setStreet(street);
+        address.setHouse(house);
+        address.setCity(city);
+        address.setCode(code);
+    }
+    
+    public void setAddress(Address address){
+        this.address = address;
+    }
+    
+    public Address getAddress(){
+        return address;
+    }
+
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
+    }
+    
+    
+    
+    
+    //Set methods
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setPersonStreet(int street) {
+        address.setStreet(street);
+    }
+    
+    public void setPersonHouse(int house){
+        address.setHouse(house);
+    }
+    
+    public void setPersonCity(String city){
+        address.setCity(city);
+    }
+    
+    public void setPersonCode(int code){
+        address.setCode(code);
+    }
+
+    public String getBookName() {
+        return bookName;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
+    
+    
+    
+    
+    
+    //Get Methods
+    public String getName(){
+        return name;
+    }
+
+    public int getPersonStreet() {
+        return address.getStreet();
+    }
+    
+    public int getPersonHouse(){
+        return address.getHouse();
+    }
+    
+    public int getPersonCode(){
+        return address.getCode();
+    }
+    
+    public String getPersonCity(){
+        return address.getCity();
+    }
+    
+    
+    
+    
+    public void display(){
+        System.out.println("Person's Name:\t" + name + "\nBook Name:\t" + bookName + "\nPublisher:\t" + publisher + "\n\n" + address + "\n\n\n\n");    //A toString method is created in the address class
+    }
+}

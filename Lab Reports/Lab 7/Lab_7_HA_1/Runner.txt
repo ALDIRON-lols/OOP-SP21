@@ -1,0 +1,35 @@
+public class Runner {
+
+    public static void main(String[] args) {
+        
+        Address a1 = new Address(56, 425, "Islamabad", 0201);
+        Person p1 = new Person(a1);
+        p1.setName("A");
+        
+        p1.display();
+        
+        a1.setHouse(27);
+        a1.setStreet(11);
+        a1.setCity("Mianwali");
+        a1.setCode(0111);
+        
+        Address a2 = new Address(a1.getStreet(), a1.getHouse(), a1.getCity(), a1.getCode());
+        Person p2 = new Person(p1.getAddress());
+        p2.setName("B");
+        
+        Person p3 = new Person("C", 6, 42, "Islamabad", 0201);
+        
+        //it is assumed that the runner or user of this program does not know about the "Address Class" and has to make changes only using the person class. 
+        Person p4 = new Person("D");
+        
+        p4.setPersonCity("Quetta");
+        p4.setPersonCode(1213);
+        p4.setPersonHouse(324);
+        p4.setPersonStreet(47);
+        
+        p2.display();
+        p3.display();
+        p4.display();
+    }
+    
+}

@@ -1,0 +1,120 @@
+public class Line {
+    private Point startPoint;
+    private Point endPoint;
+    
+    
+    
+    
+    public Line(){
+        startPoint = new Point();
+        endPoint = new Point();
+    }
+
+    public Line(Point startPoint, Point endPoint) {
+        this.startPoint = new Point();
+        this.endPoint = new Point();
+        this.startPoint = startPoint;
+        this.endPoint = endPoint;
+    }
+    
+    public Line(int start_x_coordinate,int start_y_coordinate,int end_x_coordinate,int end_y_coordinate){
+        this.startPoint = new Point();
+        this.endPoint = new Point();
+        this.setStartPoint_x_Coordinate(start_x_coordinate);
+        this.setStartPoint_y_Coordinate(start_y_coordinate);
+        this.setEndPoint_x_Coordinate(end_x_coordinate);
+        this.setEndPoint_y_Coordinate(end_y_coordinate);
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    //Getters
+    public Point getStartPoint() {
+        return startPoint;
+    }
+
+    public Point getEndPoint() {
+        return endPoint;
+    }
+    
+    public int getStartPoint_x_Coordinate(){
+        return startPoint.getX_coordinate();
+    }
+    
+    public int getStartPoint_y_Coordinate(){
+        return startPoint.getY_coordinate();
+    }
+    
+    public int getEndPoint_x_Coordinate(){
+        return endPoint.getX_coordinate();
+    }
+    
+    public int getEndPoint_y_Coordinate(){
+        return endPoint.getY_coordinate();
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    //Setters
+    public void setStartPoint(Point startPoint) {
+        this.startPoint = startPoint;
+    }
+
+    public void setEndPoint(Point endPoint) {
+        this.endPoint = endPoint;
+    }
+    
+    public void setStartPointCoordinate(int c1,int c2){
+        startPoint.setX_coordinate(c1);
+        startPoint.setY_coordinate(c1);
+    }
+    
+    public void setEndPointCoordinate(int c1,int c2){
+        endPoint.setX_coordinate(c1);
+        endPoint.setY_coordinate(c1);
+    }
+    
+    public void setStartPoint_x_Coordinate(int c1){
+        startPoint.setX_coordinate(c1);
+    }
+    
+    public void setStartPoint_y_Coordinate(int c1){
+        startPoint.setY_coordinate(c1);
+    }
+    
+    public void setEndPoint_x_Coordinate(int c1){
+        endPoint.setX_coordinate(c1);
+    }
+    
+    public void setEndPoint_y_Coordinate(int c1){
+        endPoint.setY_coordinate(c1);
+    }
+    
+    
+    
+    
+    public double lengthOfLine(){
+        double x;
+        x = Math.sqrt((endPoint.getX_coordinate() - startPoint.getX_coordinate())*(endPoint.getX_coordinate() - startPoint.getX_coordinate()) + (endPoint.getY_coordinate() - startPoint.getY_coordinate())*(endPoint.getY_coordinate() - startPoint.getY_coordinate()));
+        return x;
+    }
+    
+    public String toString(){
+        return "Starting coordinates:\n\t" + this.getStartPoint_x_Coordinate() + "\t" + this.getStartPoint_y_Coordinate() + "\n\nEnding coordinates:\n\t" + this.getEndPoint_x_Coordinate() + "\t" + this.getEndPoint_y_Coordinate() + "\n\nLength of the line:\t" + this.lengthOfLine() + "\n\n\n\n";
+    }
+    
+    public void display(){
+        System.out.println("Starting coordinates:\n\t" + this.getStartPoint_x_Coordinate() + "\t" + this.getStartPoint_y_Coordinate() + "\n\nEnding coordinates:\n\t" + this.getEndPoint_x_Coordinate() + "\t" + this.getEndPoint_y_Coordinate() + "\n\nLength of the line:\t" + this.lengthOfLine());
+    }
+}

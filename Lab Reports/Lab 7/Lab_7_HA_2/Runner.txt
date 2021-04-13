@@ -1,0 +1,15 @@
+public class Runner {
+
+    public static void main(String[] args) {
+        
+        Person p1 = new Person("Aether", "Genshin Impact", "Mihoyo");
+        
+        p1.setPersonCity("Quetta");
+        p1.setPersonCode(1213);
+        p1.setPersonHouse(324);
+        p1.setPersonStreet(47);
+        
+        p1.display();
+    }
+    
+}

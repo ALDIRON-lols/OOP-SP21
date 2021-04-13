@@ -1,0 +1,68 @@
+public class PizzaOrder {
+
+    private Pizza pizza1;
+    private Pizza pizza2;
+    private Pizza pizza3;
+    private int total_pizzas = 0;
+    
+    
+    
+    
+    //Constructors
+    public PizzaOrder(){
+        pizza1 = new Pizza();
+        total_pizzas = 0;
+    }
+    
+    public PizzaOrder(Pizza p1){
+        pizza1 = p1;
+        total_pizzas = 1;
+    }
+    
+    public PizzaOrder(Pizza p1, Pizza p2){
+        pizza1 = p1;
+        pizza2 = p2;
+        total_pizzas = 2;
+    }
+    
+    public PizzaOrder(Pizza p1, Pizza p2, Pizza p3){
+        pizza1 = p1;
+        pizza2 = p2;
+        pizza3 = p3;
+        total_pizzas = 3;
+    }
+    
+    
+    
+    
+    
+    public double calcTotal(){
+        double total = 0;
+        if(pizza1.calcCost() > 9){
+            total = total+pizza1.calcCost();
+        }
+        if(total_pizzas==2 && pizza2.calcCost() > 9){
+            total = total+pizza2.calcCost();
+        }
+        if(total_pizzas==3 &&  pizza3.calcCost() > 9){
+            total = total+pizza3.calcCost();
+        }
+        return total;
+    }
+    
+    
+    
+    
+    public String toString(){
+        if(total_pizzas == 1){
+            return "Pizza 1" + pizza1.getDescription() + "\n\nTotal Cost of the entire order:\t" + this.calcTotal() + "\n\n\n";
+        }
+        if(total_pizzas == 2){
+            return "Pizza 1" + pizza1.getDescription() + "\nPizza 2" + pizza2.getDescription() + "\n\nTotal Cost of the entire order:\t" + this.calcTotal() + "\n\n\n";
+        }
+        if(total_pizzas == 3){
+            return "Pizza 1" + pizza1.getDescription() + "\nPizza 2" + pizza2.getDescription() + "\nPizza 3" + pizza3.getDescription() + "\n\nTotal Cost of the entire order:\t" + this.calcTotal() + "\n\n\n";
+        }
+        return "No pizza in your cart";
+    }
+}
