@@ -1,0 +1,14 @@
+
+package Lab_8_Assignment_2;
+
+public class Runner {
+
+    public static void main(String[] args) {
+        
+        Laptop l1 = new Laptop(17, 21, 14, 3);
+        l1.setComputer(4, 16800, 5400000, 2.3);
+        
+        System.out.print(l1);
+    }
+    
+}

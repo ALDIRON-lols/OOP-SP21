@@ -1,0 +1,28 @@
+
+package Lab_8_Assignment_1;
+
+import java.util.*;
+public class Runner {
+
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        
+        
+        System.out.println("Enter the Title:");
+        String title = input.next();
+        System.out.println("Enter the playing time:");
+        int playingTime = input.nextInt();
+        System.out.println("Enter the Price:");
+        double price = input.nextDouble();
+        System.out.println("Enter the Page Count:");
+        int pageCount = input.nextInt();
+        
+        Tape t1 = new Tape(playingTime, title, price);
+        Book b1 =  new Book(pageCount);
+        
+        System.out.println(b1);
+        System.out.println(t1);
+    }
+    
+}

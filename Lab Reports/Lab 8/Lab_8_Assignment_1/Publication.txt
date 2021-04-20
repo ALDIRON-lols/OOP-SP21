@@ -1,0 +1,43 @@
+
+package Lab_8_Assignment_1;
+
+public class Publication {
+    String title;
+    double price;
+
+    //Constructors
+    public Publication() {
+    }
+
+    public Publication(String title, double price) {
+        this.title = title;
+        this.price = price;
+    }
+
+    //Setters
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    //Getters
+    public String getTitle() {
+        return title;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+    
+    //Methods
+    public void display(){
+        System.out.println("\n\"Publication Class\"\nPrice:\t" + price + "\nTitle:\t" + title);
+    }
+    
+    public String toString(){
+        return "\n\"Publication Class\"\nPrice:\t" + price + "\nTitle:\t" + title;
+    }
+}

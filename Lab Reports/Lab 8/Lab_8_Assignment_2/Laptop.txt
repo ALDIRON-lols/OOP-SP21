@@ -1,0 +1,95 @@
+
+package Lab_8_Assignment_2;
+
+import java.util.logging.Logger;
+
+public class Laptop extends Computer{
+    
+    int length, width, height, weight;
+
+    //Constructors
+    public Laptop() {
+    }
+
+    public Laptop(int length, int width, int height, int weight) {
+        this.length = length;
+        this.width = width;
+        this.height = height;
+        this.weight = weight;
+    }
+
+    public Laptop(int length, int width, int height, int weight, int wordsize, int memorysize, int storagesize, double speed) {
+        super(wordsize, memorysize, storagesize, speed);
+        this.length = length;
+        this.width = width;
+        this.height = height;
+        this.weight = weight;
+    }
+    
+    //Setters
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+    
+    public void setComputer(int wordsize, int memorysize, int storagesize, double speed){
+        super.setMemorysize(memorysize);
+        super.setSpeed(speed);
+        super.setStoragesize(storagesize);
+        super.setWordsize(wordsize);
+    }
+    
+    //Getters
+    public int getLength() {
+        return length;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+    
+    public int getCompMemorySize(){
+        return super.getMemorysize();
+    }
+    
+    public double getCompSpeed(){
+        return super.getSpeed();
+    }
+    
+    public int getCompStoragesize(){
+        return super.getStoragesize();
+    }
+    
+    public int getCompWordsize(){
+        return super.getWordsize();
+    }
+    
+    //Methods
+    public void display(){
+        System.out.println("\n\"Laptop Class\"\nLength:\t" + length + "cm\nWidth:\t" + width + "cm\nHeigth:\t" + height + "cm\nWeight:\t" + weight + "Kg\n");
+    }
+    
+    public String toString(){
+        super.display();
+        return "\n\"Laptop Class\"\nLength:\t" + length + "cm\nWidth:\t" + width + "cm\nHeigth:\t" + height + "cm\nWeight:\t" + weight + "Kg\n";
+    }
+}

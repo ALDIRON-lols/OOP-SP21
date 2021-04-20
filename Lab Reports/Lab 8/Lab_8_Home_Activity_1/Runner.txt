@@ -1,0 +1,22 @@
+
+package Lab_8_Home_Activity_1;
+
+
+public class Runner {
+
+    public static void main(String[] args) {
+        
+        Date d1 = new Date(2, 19, 2019);
+        
+        Student s1 = new Student("Junior");
+        
+        Faculty f1 = new Faculty("Internie", 12);
+        
+        Staff st = new Staff("beginner", "Mihoyo", 10000, d1, "Aether", "******", 0313122, "internie@123");
+        
+        System.out.println(st);
+        System.out.println(f1);
+        System.out.println(s1);
+    }
+    
+}

@@ -1,0 +1,40 @@
+
+package Lab_8_Assignment_1;
+
+public class Tape extends Publication{
+    int playingTime;
+
+    public Tape() {
+    }
+
+    public Tape(int playingTime) {
+        this.playingTime = playingTime;
+    }
+
+    public Tape(int playingTime, String title, double price) {
+        super(title, price);
+        this.playingTime = playingTime;
+    }
+
+    
+
+    public void setPlayingTime(int playingTime) {
+        this.playingTime = playingTime;
+    }
+    
+    
+    
+
+    public int getPlayingTime() {
+        return playingTime;
+    }
+    
+    public void display(){
+        System.out.println("\n\"Tape Class\"\nPlaying Time:\t" + playingTime);
+    }
+    
+    public String toString(){
+        System.out.println(super.toString());
+        return "\n\"Tape Class\"\nPlaying Time:\t" + playingTime;
+    }
+}

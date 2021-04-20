@@ -1,0 +1,53 @@
+
+package Lab_8_Home_Activity_1;
+
+public class Employee extends Person{
+    
+    String office;
+    double sallary;
+    Date date;
+  
+    //Constructors
+    public Employee(){
+        
+    }
+    
+    public Employee(String office, double sallary, Date date, String name, String address, int phoneNumber, String emailAddress) {
+        super(name, address, phoneNumber, emailAddress);
+        this.office = office;
+        this.sallary = sallary;
+        this.date = date;
+    }
+
+    //Setters
+    public void setOffice(String office) {
+        this.office = office;
+    }
+
+    public void setSallary(double sallary) {
+        this.sallary = sallary;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    //Getters
+    public String getOffice() {
+        return office;
+    }
+
+    public double getSallary() {
+        return sallary;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+    
+    //Methods
+    public String toString(){
+        System.out.println(super.toString());
+        return "\n\"The Employee Class\"\nDate:\t" + date + "\nOffice:\t" + office + "\nSallary:\t" + sallary + "\n\n";
+    }
+}

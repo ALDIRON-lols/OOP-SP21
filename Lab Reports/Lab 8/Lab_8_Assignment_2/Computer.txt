@@ -1,0 +1,64 @@
+
+package Lab_8_Assignment_2;
+
+public class Computer {
+    
+    int wordSize;
+    int memorySize;
+    int storageSize;
+    double speed;
+
+    //Constructors
+    public Computer() {
+    }
+
+    public Computer(int wordsize, int memorysize, int storagesize, double speed) {
+        this.wordSize = wordsize;
+        this.memorySize = memorysize;
+        this.storageSize = storagesize;
+        this.speed = speed;
+    }
+
+    //Setters
+    public void setWordsize(int wordsize) {
+        this.wordSize = wordsize;
+    }
+
+    public void setMemorysize(int memorysize) {
+        this.memorySize = memorysize;
+    }
+
+    public void setStoragesize(int storagesize) {
+        this.storageSize = storagesize;
+    }
+
+    public void setSpeed(double speed) {
+        this.speed = speed;
+    }
+    
+    //Getters
+    public int getWordsize() {
+        return wordSize;
+    }
+
+    public int getMemorysize() {
+        return memorySize;
+    }
+
+    public int getStoragesize() {
+        return storageSize;
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+    
+    //Methods
+    public void display(){
+        System.out.println("\n\"Computer Class\"\nMemory Size:\t" + memorySize + "MB\nSpeed:\t" + speed + "MHz\nStorage Size:\t" + storageSize + "MB\nWord Size\t" + wordSize + "bits\n");
+    }    
+    
+    public String toString(){
+        return "\n\"Computer Class\"\nMemory Size:\t" + memorySize + "MB\nSpeed:\t" + speed + "MHz\nStorage Size:\t" + storageSize + "MB\nWord Size\t" + wordSize + "bits\n";
+    }
+}

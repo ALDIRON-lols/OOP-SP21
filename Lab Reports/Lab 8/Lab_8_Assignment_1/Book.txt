@@ -1,0 +1,38 @@
+
+package Lab_8_Assignment_1;
+
+public class Book extends Publication{
+    int pageCount;
+
+    //Constructors
+    public Book() {
+    }
+
+    public Book(int pageCount) {
+        this.pageCount = pageCount;
+    }
+
+    public Book(int pageCount, String title, double price) {
+        super(title, price);
+        this.pageCount = pageCount;
+    }
+
+    //Setters
+    public void setPageCount(int pageCount) {
+        this.pageCount = pageCount;
+    }
+
+    //Getters
+    public int getPageCount() {
+        return pageCount;
+    }
+    
+    //Methods
+    public void display(){
+        System.out.println("\n\"Book Class\"\nPage Count:\t" + pageCount);
+    }
+    
+    public String toString(){
+        return "\n\"Book Class\"\nPage Count:\t" + pageCount;
+    }
+}

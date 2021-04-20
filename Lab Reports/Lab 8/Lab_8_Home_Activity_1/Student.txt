@@ -1,0 +1,31 @@
+
+package Lab_8_Home_Activity_1;
+
+public class Student extends Person{
+    
+    String status;
+
+    //Constructors
+    public Student() {
+        
+    }
+    
+    public Student(String status) {
+        this.status = status;
+    }
+
+    //Setters
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    //Getters
+    public String getStatus() {
+        return status;
+    }
+    
+    //Methods
+    public String toString(){
+        return "\n\"The Student Class\"\nStatus:\t" + status + "\n\n";
+    }
+}

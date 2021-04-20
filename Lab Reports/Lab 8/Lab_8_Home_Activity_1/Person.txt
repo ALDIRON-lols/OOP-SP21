@@ -1,0 +1,72 @@
+
+package Lab_8_Home_Activity_1;
+
+public class Person {
+    
+    String name;
+    String address;
+    int phoneNumber;
+    String emailAddress;
+
+    
+    
+    public Person() {
+
+    }
+    
+    
+    public Person(String name, String address, int phoneNumber, String emailAddress) {
+        this.name = name;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+        this.emailAddress = emailAddress;
+    }
+    
+    
+    
+    
+    
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    
+    
+    
+    
+    
+    
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+    
+    //Methods
+    public String toString(){
+        return "\n\"The Person Class\"\nAddress:\t" + address + "\nEmail Address:\t" + emailAddress + "\nName:\t" + name + "\nPhone Number:\t" + phoneNumber + "\n\n";
+    }
+}

@@ -1,0 +1,33 @@
+
+package Lab_8_Home_Activity_1;
+
+public class Staff extends Employee{
+    
+    String title;
+
+    //Constructors
+    public Staff(){
+        
+    }
+    
+    public Staff(String title, String office, double sallary, Date date, String name, String address, int phoneNumber, String emailAddress) {
+        super(office, sallary, date, name, address, phoneNumber, emailAddress);
+        this.title = title;
+    }
+
+    //Setters
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    //Getters
+    public String getTitle() {
+        return title;
+    }
+    
+    //Methods
+    public String toString(){
+        System.out.println(super.toString());
+        return "\n\"The Staff Class\"\nTitle:\t" + title + "\n\n";
+    }
+}
