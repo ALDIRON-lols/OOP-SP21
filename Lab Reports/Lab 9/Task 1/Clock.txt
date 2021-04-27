@@ -1,0 +1,44 @@
+
+package Lab_9_Assignment_1_Task_1;
+
+public class Clock {
+    
+    int hr, min, sec;
+
+    public Clock() {
+    }
+
+    public Clock(int hr, int min, int sec) {
+        this.hr = hr;
+        this.min = min;
+        this.sec = sec;
+    }
+
+    public void setHr(int hr) {
+        this.hr = hr;
+    }
+
+    public void setMin(int min) {
+        this.min = min;
+    }
+
+    public void setSec(int sec) {
+        this.sec = sec;
+    }
+
+    public int getHr() {
+        return hr;
+    }
+
+    public int getMin() {
+        return min;
+    }
+
+    public int getSec() {
+        return sec;
+    }
+    
+    public void display(){
+        System.out.print(hr + ":" + min + ":" + sec + "\n\n");
+    }
+}
