@@ -1,0 +1,25 @@
+
+
+public class ClockExtend extends Clock{
+
+    public ClockExtend() {
+    }
+    
+    public ClockExtend(int hr, int min, int sec) {
+        super(hr, min, sec);
+    }
+    
+    public void display(){
+        int hr = super.getHr();
+        boolean d = true;
+        if (hr>12){
+            hr = hr-12;
+            d = false;
+        }
+        super.display();
+        if(d)
+            System.out.println(hr + ":" + min + ":" + sec + " AM" + "\n\n");
+        else
+            System.out.println(hr + ":" + min + ":" + sec + " PM" + "\n\n");
+    }
+}
